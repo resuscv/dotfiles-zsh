@@ -1,7 +1,5 @@
 *
-!.gitignore.d
 !.gitignore.d/zsh
-!.zsh.d
 !.zsh.d/aliases.zsh
 !.zsh.d/environment.zsh
 !.zsh.d/my_path.zsh

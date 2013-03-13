@@ -45,7 +45,7 @@ ZSH_THEME_GIT_TIME_SINCE_COMMIT_NEUTRAL="%{$fg[cyan]%}"
 # Determine the time since last commit. If branch is clean,
 # use a neutral color, otherwise colors will vary according to time.
 function git_time_since_commit() {
-    if [[ -z $(git config core.nops1) ]] && git rev-parse --git-dir > /dev/null 2>&1; then
+    if git rev-parse --git-dir > /dev/null 2>&1; then
         # Only proceed if there is actually a commit.
         if [[ $(git log 2>&1 > /dev/null | grep -c "^fatal: bad default revision") == 0 ]]; then
             # Get the last commit.
@@ -92,4 +92,4 @@ PROMPT='
 %{$fg[blue]%}%m%{$reset_color%} %{$fg[cyan]%}%~ %{$reset_color%}$([[ -z $(git config core.nops1) ]] && git_prompt_short_sha)$([[ -z $(git config core.nops1) ]] && git_prompt_info)
 %{$fg[red]%}%!%{$reset_color%} $(prompt_char) : '
 
-RPROMPT='${return_status}$(git_time_since_commit)$(git_prompt_status)%{$reset_color%}'
+RPROMPT='${return_status}$([[ -z $(git config core.nops1) ]] && git_time_since_commit)$([[ -z $(git config core.nops1) ]] && git_prompt_status)%{$reset_color%}'
