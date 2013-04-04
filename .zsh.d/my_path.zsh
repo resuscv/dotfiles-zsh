@@ -1,7 +1,7 @@
 # -*- shell-script -*-
 #
 # Update the default to *my* path
-MY_PATH=".:$HOME/bin"
+MY_PATH=".:$HOME/bin:$HOME/.cabal/bin"
 
 LOCAL_MOD=${0}.`uname`
 if [[ -e ${LOCAL_MOD} ]]; then
