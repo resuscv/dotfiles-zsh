@@ -16,3 +16,9 @@ export HISTIGNORE="&:ls:l: "
 export LESS="-iR"
 
 export EDITOR="nano"
+# I want to run emacs as a daemon
+export ALTERNATE_EDITOR=""
+
+# I *want* to be able to use # as a comment... 
+setopt interactivecomments
+
