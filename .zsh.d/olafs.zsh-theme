@@ -33,7 +33,7 @@ function prompt_char() {
   # Git where I don't want to run all of the informative procs (i.e. it's too damn slow)
   [[ -n $(git config core.nops1) ]]                                      && echo "%{$bg[red]$fg[yellow]%}±%{$reset_color%}" && return
   ###hg root >/dev/null 2>/dev/null && echo "%{$fg_bold[red]%}☿%{$reset_color%}" && return
-  echo "%{$fg[cyan]%}◯%{$reset_color%}"
+  echo "%{$fg[cyan]%}x%{$reset_color%}"
 }
 
 # Colors vary depending on time lapsed.
