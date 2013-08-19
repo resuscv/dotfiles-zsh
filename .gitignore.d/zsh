@@ -1,6 +1,7 @@
 *
 !.gitignore.d/zsh
 !.zsh.d/aliases.zsh
+!.zsh.d/colour.scheme
 !.zsh.d/environment.zsh
 !.zsh.d/my_path.zsh
 !.zsh.d/olafs.zsh-theme

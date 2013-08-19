@@ -7,6 +7,8 @@
 #    SCREENSHOT: coming soon
 # -----------------------------------------------------------------------------
 
+export LS_COLORS=$(grep -v -e '^#' -e '^$' ~/.zsh.d/colour.scheme | tr '\n' ':')
+
 MODE_INDICATOR="%{$fg_bold[red]%}❮%{$reset_color%}%{$fg[red]%}❮❮%{$reset_color%}"
 local return_status="%{$fg[red]%}%(?..⏎)%{$reset_color%} "
 
