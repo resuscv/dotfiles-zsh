@@ -5,4 +5,5 @@
 !.zsh.d/environment.zsh
 !.zsh.d/my_path.zsh
 !.zsh.d/olafs.zsh-theme
+!.zsh.d/unit_test_sounds.zsh
 !.zshrc
