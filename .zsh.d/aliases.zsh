@@ -18,13 +18,18 @@ alias M='less'
 
 # Editors
 alias p='nano'
-e () { emacs "$@" & }
-alias ue='emacs -nw'
+#e () { emacs "$@" & }
+#alias ue='emacs -nw'
+e () { emacsclient "$@" & }
+alias ue='emacsclient -nw'
 
 # Let's save on typing.
 alias md='mkdir'
 alias rd='rmdir'
 mcd() { mkdir -p $1 && cd $1 ; }
+
+# Return only the filenames that match the grep
+alias fgrep='grep -l'
 
 alias run='make run'
 # 'Cos I just can't get this one right.
