@@ -44,3 +44,13 @@ ZSH_CUSTOM=$HOME/.zsh.d
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+
+# LAST of all...  Run TMUX
+if [ "$TERM" != "screen-256color" ] \
+	&& [ "$TERM" != "screen" ] \
+	&& [ `which tmux 2> /dev/null` ] \
+	&& [ `which tmux-start 2> /dev/null` ] \
+	&& [ -z "$TMUX" ]; then
+
+	tmux-start
+fi
