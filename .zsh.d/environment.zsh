@@ -2,9 +2,6 @@
 #
 # Environment variables for zsh
 
-# I don't like others seeing my files.
-umask 077
-
 # Set this to to avoid having consecutive duplicate commands and other
 # not so useful information appended to the history list.
 export HISTIGNORE="&:ls:l: "
