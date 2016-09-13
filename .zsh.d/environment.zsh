@@ -19,3 +19,5 @@ export ALTERNATE_EDITOR=""
 # I *want* to be able to use # as a comment... 
 setopt interactivecomments
 
+# For notmuch
+export NOTMUCH_CONFIG="${HOME}/notmuch-mail/zzz-settings/notmuch-config"
