@@ -13,6 +13,14 @@ if [[ -e ${LOCAL_MOD} ]]; then
 fi
 unset LOCAL_MOD
 
+# added by Anaconda2 2.4.1 installer
+# Modified by me...
+ANACONDA_PATH=${HOME}/software/installed/anaconda2/bin
+if [[ -d ${ANACONDA_PATH} ]]; then
+    MY_PATH="${ANACONDA_PATH}:${MY_PATH}"
+fi
+unset ANACONDA_PATH
+
 # Update the PATH
 export PATH="${MY_PATH}:${PATH}"
 export MANPATH="${MY_MANPATH}:$(man -w)"
