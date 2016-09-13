@@ -17,7 +17,7 @@ alias m='less'
 alias M='less'
 
 # Editors
-alias p='nano'
+alias p='nano -ET 4'
 #e () { emacs "$@" & }
 #alias ue='emacs -nw'
 e () { emacsclient "$@" & }
@@ -30,6 +30,7 @@ mcd() { mkdir -p $1 && cd $1 ; }
 
 # Return only the filenames that match the grep
 alias fgrep='grep -l'
+#fgrep() { find . -type f -mindepth 1 -maxdepth 1 -exec grep -l $1 '{}' ';' | grep -v '/\.git/' }
 
 alias run='make run'
 # 'Cos I just can't get this one right.
@@ -45,3 +46,5 @@ alias  lc='l  *.([cCfFhrR]|sh|[Ff]90|pcm)'
 
 alias pss='ps xauww | grep "^${USER}"'
 alias pso='ps xau | grep -vE "^(${USER}|root)"'
+
+alias history_off='unset HISTFILE ; tmux rename-window -t${TMUX_PANE} "History OFF"'
