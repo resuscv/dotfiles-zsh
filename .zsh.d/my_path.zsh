@@ -21,9 +21,10 @@ if [[ -d ${ANACONDA_PATH} ]]; then
 fi
 unset ANACONDA_PATH
 
-# Update the PATH
+# Update the PATHs
 export PATH="${MY_PATH}:${PATH}"
-export MANPATH="${MY_MANPATH}:$(man -w)"
+# Only run this on machines that have man installed (some docker containers don't)
+[[ -x $(which man) ]] && export MANPATH="${MY_MANPATH}:$(man -w)"
 
 unset MY_PATH
 unset MY_MANPATH
