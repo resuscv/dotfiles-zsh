@@ -12,7 +12,7 @@ export HISTIGNORE="&:ls:l: "
 # is OK.
 export LESS="-iR"
 
-export EDITOR="nano -ET 4"
+export EDITOR=nano
 # I want to run emacs as a daemon
 export ALTERNATE_EDITOR=""
 

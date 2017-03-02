@@ -17,7 +17,7 @@ alias m='less'
 alias M='less'
 
 # Editors
-alias p='nano -ET 4'
+alias p=nano
 #e () { emacs "$@" & }
 #alias ue='emacs -nw'
 e () { emacsclient "$@" & }

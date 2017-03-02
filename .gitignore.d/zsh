@@ -1,5 +1,6 @@
 *
 !.gitignore.d/zsh
+!.nanorc
 !.zsh.d/aliases.zsh
 !.zsh.d/colour.scheme
 !.zsh.d/environment.zsh
