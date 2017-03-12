@@ -20,6 +20,13 @@ if [[ -d ${ANACONDA_PATH} ]]; then
     MY_PATH="${ANACONDA_PATH}:${MY_PATH}"
 fi
 unset ANACONDA_PATH
+# Modified by me...
+MINICONDA_PATH=${HOME}/software/installed/miniconda3/bin
+if [[ -d ${MINICONDA_PATH} ]]; then
+    MY_PATH="${MINICONDA_PATH}:${MY_PATH}"
+fi
+unset MINICONDA_PATH
+
 
 # Update the PATHs
 export PATH="${MY_PATH}:${PATH}"
