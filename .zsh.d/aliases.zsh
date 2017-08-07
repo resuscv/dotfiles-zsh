@@ -37,7 +37,7 @@ alias run='make run'
 #alias pusdh=pushd
 
 # ls related commands.
-alias ls='ls -F --color'
+alias ls='ls -F --color=auto'
 alias l='ls -Flah'
 # These are a messy way to do the job, but they work!
 lsx() { ls "${@:-.}"/*(*); }
