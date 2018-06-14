@@ -15,7 +15,8 @@ export UNDERLINE='\033[4m'
 
 alias cp='cp -i'
 alias mv='mv -i'
-alias rm='rm -i'
+#alias rm='rm -i'
+alias rm='echo "${BOLD}${RED}rm${NONE} is disabled, use  ${BOLD}${GREEN}trash${NONE}  or  ${BOLD}${GREEN}\\\rm${NONE}  instead.\n File still exists:  ${BOLD}${RED}"'
 #alias clean='rm -f .*~ *~ \#*# .\#* >& /dev/null'
 
 
